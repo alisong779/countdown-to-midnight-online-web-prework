@@ -1,3 +1,5 @@
+require 'pry'
+
 def countdown(number)
 while number > 0
   puts "#{number} SECOND(S)!"
@@ -8,6 +10,7 @@ end
 end
 
 def countdown_with_sleep(number)
+  binding.pry
   while number > 0
   puts "#{number} SECOND(S)!" 
   sleep(1)
